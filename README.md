@@ -6,7 +6,7 @@ Requirements
 * Java 1.7
 * libshout 2.2.2
 
-Target folder contains libshout-java.so ready for use on 32-bit Linux. Put it in the user.dir of your project.
+Folder prebuilt-binaries contains libshout-java.so ready for use on 32-bit Linux. Put it in the user.dir of your project.
 
 ``` java
 Libshout libshout = new Libshout();
@@ -63,9 +63,11 @@ mvn install
 ```
 
 on Ubuntu, Windows, OpenSuse etc
- 
-please commit your story
 
-When libshout is in non-standard location
+When libshout is in non-standard location (e.g. compiled from source and installed somewhere in user home dirs)
 
+``` bash
 LIBRARY_PATH=/path/to/libshout/lib/ C_INCLUDE_PATH=/path/to/libshout/include/ mvn install
+```
+
+please commit your story
