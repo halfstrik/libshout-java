@@ -65,3 +65,7 @@ mvn install
 on Ubuntu, Windows, OpenSuse etc
  
 please commit your story
+
+When libshout is in non-standard location
+
+LIBRARY_PATH=/path/to/libshout/lib/ C_INCLUDE_PATH=/path/to/libshout/include/ mvn install
